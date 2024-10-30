@@ -1,0 +1,130 @@
+/* Reset basic styling for consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set up a clean and modern font */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header styles for all pages */
+  header {
+    background-color: #004080; /* Dark blue for header background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation bar styling */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+  }
+  
+  /* Hover effect for navigation links */
+  nav a:hover {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #0066cc;
+  }
+  
+  /* Main section styling */
+  section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Specific styles for the main page elements */
+  h2, h3 {
+    color: #004080;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+  }
+  
+  /* Styling for lists in the Home page */
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Schedule table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #004080;
+    color: white;
+    text-align: left;
+  }
+  
+  td {
+    text-align: left;
+  }
+  
+  /* Speaker cards for individual speakers */
+  .speaker {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #e8f4ff;
+    border-left: 4px solid #004080;
+    border-radius: 5px;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #004080;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  /* Link color within sections and footer */
+  a {
+    color: #004080;
+  }
+  
+  a:hover {
+    color: #f6f6f6;
+    text-decoration: underline;
+  }
+
+  .list:hover{
+    color: aqua;
+  }
