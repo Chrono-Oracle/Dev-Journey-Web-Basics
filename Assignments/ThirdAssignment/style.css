@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -12,8 +12,6 @@ body {
 .logo {
     text-align: center;
     font-size: 2.5rem;
-    justify-content: space-between;
-    align-items: center;
     background-color: #2b3a92;
     padding: 1.2rem 5%;
 }
@@ -104,4 +102,5 @@ footer {
     background-color: #2b3a92;
     color: #ffffff;
     font-size: 0.9rem;
+    position: sticky;
 }

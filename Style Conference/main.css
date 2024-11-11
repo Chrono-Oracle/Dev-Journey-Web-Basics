@@ -1,10 +1,11 @@
 /* General Styles */
 body {
     color: #666;
-    font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    background-color: #f9f9f9;
+    background: #293f50;
+
 }
 
 /* Box Sizing */
@@ -64,6 +65,16 @@ body {
     text-transform: uppercase;
 }
 
+.primary-nav a,
+.footer-nav a {
+    color: #fff;
+}
+
+.primary-nav a:hover,
+.footer-nav a:hover {
+    color: #648880;
+}
+
 .primary-nav a:hover {
     color: #a9b2b9;
 }
@@ -82,7 +93,7 @@ body {
 
 .hero p {
     font-size: 18px;
-    color: #666;
+    color: #ffffff;
     margin-bottom: 30px;
     line-height: 1.5;
     max-width: 800px;
@@ -90,13 +101,24 @@ body {
     margin-right: auto;
 }
 
+.btn-alt {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+}
+
+.btn-alt:hover {
+    background: #fff;
+    color: #648880;
+}
+
 .hero .btn-alt {
     border: 1px solid #4a6b60;
     padding: 12px 30px;
-    color: #4a6b60;
+    color: #bababa;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 400;
+    letter-spacing: .5px;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -113,6 +135,30 @@ body {
     margin-top: .5px;
     margin-bottom: 40px;
 }
+
+.row {
+    background-color: #fff;
+    min-width: 960px;
+    padding: 66px 0 44px 0;
+}
+
+.row-alt {
+    min-width: 960px;
+}
+
+.row {
+    background: #fff;
+    padding: 66px 0 44px 0;
+}
+
+.row-alt {
+    background: #cbe2c1;
+    background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+    background: linear-gradient(to right, #a1d3b0, #f6f1d3);
+    padding: 44px 0 22px 0;
+}
+
 
 .teaser {
     width: 30%;
@@ -136,7 +182,7 @@ body {
 
 .teaser p {
     font-size: 14px;
-    color: #666;
+    color: #648880;
     line-height: 1.4;
 }
 
@@ -166,4 +212,15 @@ body {
 
 .footer-nav a:hover {
     color: #6a8070;
+}
+
+
+
+.lead {
+    text-align: center;
+}
+
+.lead p {
+    font-size: 21px;
+    line-height: 33px;
 }
