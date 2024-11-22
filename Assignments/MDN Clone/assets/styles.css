@@ -1,0 +1,325 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1e1e1e;
+    color: #f5f5f5;
+}
+
+/* Header Section */
+.top-banner {
+    background-color: #313131;
+}
+
+.top-banner p {
+    padding: 15px;
+    text-align: center;
+}
+
+.top-banner a {
+    color: #ac75df;
+    text-decoration: none;
+}
+
+.top-banner a:hover {
+    color: #ac75df;
+    text-decoration: underline;
+}
+
+header {
+    background-color: #1B1B1B;
+    padding: 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+nav {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    width: 100%;
+}
+
+#mdn-docs-logo {
+    width: 80px; /* Adjust the size as needed */
+    padding-top: 7px;
+}
+.logo-m, .logo-_ {
+    fill: #87CEFA; /* Light Blue (matches your uploaded image) */
+}
+.logo-text {
+    fill: #ffffff; /* White color for the text */
+}
+
+
+nav .logo {
+    width: 160px;
+    padding-left: 50px;
+}
+
+nav .logo a {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    width: 950px;
+}
+
+nav .nav-links a {
+    color: #bbb;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+nav .nav-links a:hover {
+    background-color: #007acc;
+    margin: 10px;
+    color: #fff;
+}
+
+nav .auth-links {
+    width: 250px;
+}
+
+nav .auth-links button{
+    background: none;
+    border: none;
+    color: #e6e6e6;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+nav .auth-links button:nth-child(2) {
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    color: #171717;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+nav .auth-links button:hover {
+    background: #f5f5f5;
+    color: #202124;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22675%22%20height%3D%22675%22%20viewBox%3D%220%200%20675%20675%22%20fill%3D%22none%22%3E%3Ctitle%3EMandala%3C%2Ftitle%3E%3Cdefs%3E%3Cpath%20d%3D%22M337.5%2C337.5%20m-320%2C0%20a320%2C320%200%201%2C1%20640%2C0%20a320%2C320%200%201%2C1%20-640%2C0%22%20id%3D%22circle1%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M337.5%2C337.5%20m-280%2C0%20a280%2C280%200%201%2C1%20560%2C0%20a280%2C280%200%201%2C1%20-560%2C0%22%20id%3D%22circle2%22%3E%3C%2Fpath%3E%3C%2Fdefs%3E%3Ctext%20dy%3D%2270%22%20textLength%3D%222010%22%3E%3CtextPath%20textLength%3D%222010%22%20href%3D%22%23circle1%22%3E...%3C%2FtextPath%3E%3C%2Ftext%3E%3C%2Fsvg%3E');
+    background-size: cover; /* Makes sure it covers the whole section */
+    background-position: center; /* Centers the SVG */
+    background-repeat: no-repeat; /* Prevents tiling of the background */
+    padding: 60px 20px; /* Adjust as needed */
+    height: 100vh; /* Set the desired height for your hero section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background: #007acc;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #005a99;
+}
+
+/* Advert Section */
+.advert {
+    background-color: #1e2e3e;
+    padding: 30px;
+    text-align: center;
+}
+
+.advert-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.advert-content a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+/* Featured Articles Section */
+.featured-articles {
+    padding: 60px 20px;
+}
+
+.featured-articles h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.article {
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.article:hover {
+    transform: translateY(-5px);
+}
+
+.article h3 {
+    font-size: 1rem;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+/* Latest News Section */
+.latest-news {
+    background-color: #202124;
+    padding: 60px 20px;
+}
+
+.latest-news h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.news-item:hover {
+    background-color: #3c3c3c;
+}
+
+/* Footer Section */
+footer {
+    background-color: #202124;
+    color: #bbb;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer-logo p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.social-links img {
+    width: 24px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s;
+}
+
+.social-links img:hover {
+    filter: brightness(1.5);
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-bottom img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
