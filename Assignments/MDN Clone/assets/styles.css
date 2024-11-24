@@ -6,9 +6,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #1e1e1e;
+    background-color: #202124;
     color: #f5f5f5;
 }
 
@@ -81,13 +80,76 @@ nav .nav-links {
 nav .nav-links a {
     color: #bbb;
     text-decoration: none;
-    padding-left: 10px;
+    padding: 12px;
 }
 
 nav .nav-links a:hover {
-    background-color: #007acc;
-    margin: 10px;
+    background-color: #4C5E7F;
+    border-radius: 5px;
     color: #fff;
+}
+
+.Theme {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.Theme:hover {
+    background-color: #41454d;
+    border-radius: 5px;
+}
+
+.Theme img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.Theme a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.search-bar-nav {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.search-bar-nav {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    width: 90px;
+}
+
+.search-bar-nav input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    height: 30px;
+    color: #fff;
+}
+
+.search-bar-nav button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0 15px;
+    margin-right: 170px;
+}
+
+.search-bar-nav button img {
+    width: 20px;
+    height: 20px;
 }
 
 nav .auth-links {
@@ -113,144 +175,397 @@ nav .auth-links button:nth-child(2) {
     margin-left: 10px;
 }
 
-nav .auth-links button:hover {
+nav .auth-links button:nth-child(2):hover {
     background: #f5f5f5;
     color: #202124;
+    
 }
 
 /* Hero Section */
 .hero {
     position: relative;
-    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22675%22%20height%3D%22675%22%20viewBox%3D%220%200%20675%20675%22%20fill%3D%22none%22%3E%3Ctitle%3EMandala%3C%2Ftitle%3E%3Cdefs%3E%3Cpath%20d%3D%22M337.5%2C337.5%20m-320%2C0%20a320%2C320%200%201%2C1%20640%2C0%20a320%2C320%200%201%2C1%20-640%2C0%22%20id%3D%22circle1%22%3E%3C%2Fpath%3E%3Cpath%20d%3D%22M337.5%2C337.5%20m-280%2C0%20a280%2C280%200%201%2C1%20560%2C0%20a280%2C280%200%201%2C1%20-560%2C0%22%20id%3D%22circle2%22%3E%3C%2Fpath%3E%3C%2Fdefs%3E%3Ctext%20dy%3D%2270%22%20textLength%3D%222010%22%3E%3CtextPath%20textLength%3D%222010%22%20href%3D%22%23circle1%22%3E...%3C%2FtextPath%3E%3C%2Ftext%3E%3C%2Fsvg%3E');
-    background-size: cover; /* Makes sure it covers the whole section */
-    background-position: center; /* Centers the SVG */
-    background-repeat: no-repeat; /* Prevents tiling of the background */
-    padding: 60px 20px; /* Adjust as needed */
-    height: 100vh; /* Set the desired height for your hero section */
+    height: 55vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    overflow: hidden;
+    color: #fff;
+    z-index: 1;
 }
 
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/mandala 2.png');
+    background-color: #000;
+    background-size: 700px 700px;
+    background-position: 640px -140px;
+    background-repeat: no-repeat;
+    opacity: 30%;
+    z-index: -1;
+}
+
+
 .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-size: 15px;
     margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+.hero-content .h1 {
+    text-decoration: 2px underline #007acc;
+}
+
+.hero-content .p {
+    color: #007acc;
+}
+
+.hero-content .p:hover {
+    text-decoration: 2px underline #007acc;
+    cursor: pointer;
+}
+
+.hero-content-text {
+    margin-top: -25px;
+    margin-left: -100px;
 }
 
 .search-bar {
     display: flex;
     justify-content: center;
+    max-width: 100%;
+}
+
+.search-bar {
+    display: flex;
     align-items: center;
-    max-width: 500px;
     margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    width: 600px;
 }
 
 .search-bar input {
-    width: 80%;
+    flex: 1;
     padding: 10px;
     border: none;
-    border-radius: 5px 0 0 5px;
     outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    height: 65px;
+    color: #fff;
 }
 
 .search-bar button {
-    padding: 10px;
     border: none;
-    background: #007acc;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
+    background-color: transparent;
     cursor: pointer;
-    transition: background 0.3s;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
 }
 
-.search-bar button:hover {
-    background: #005a99;
+.search-bar button img {
+    width: 20px;
+    height: 20px;
 }
+
 
 /* Advert Section */
 .advert {
-    background-color: #1e2e3e;
+    background-color: #0F4764;
     padding: 30px;
-    text-align: center;
+    height: 250px;
+    display: flex;
+    align-items: center; 
+    gap: 1px;
 }
 
-.advert-content h2 {
-    font-size: 1.5rem;
+.advert-logo img {
+    margin-left: 40%;
+    max-width: 500px;
+    height: auto;
+}
+
+.advert-content {
+    margin-left: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 50px;
+    font-size: 1.7rem;
     margin-bottom: 10px;
 }
 
 .advert-content a {
-    color: #007acc;
+    color: #fff;
     text-decoration: none;
 }
 
+
 /* Featured Articles Section */
-.featured-articles {
-    padding: 60px 20px;
+.Featured {
+    background-color: #202124;
 }
 
-.featured-articles h2 {
-    text-align: center;
-    margin-bottom: 40px;
+.featured-articles {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 10px;
 }
+  
+.featured-articles h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 170px;
+}
+  
 
 .articles-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-}
-
-.article {
-    background-color: #303030;
+    max-width: 950px;
+    margin: 0 auto;
     padding: 20px;
+}  
+  
+.article {
+    flex: 1 1 300px;
+    max-width: 400px;
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #e2e2e2;
     border-radius: 8px;
-    transition: transform 0.3s;
 }
-
+  
 .article:hover {
-    transform: translateY(-5px);
+    box-shadow: 3px 5px 5px 5px rgba(135, 135, 135, 0.1);
 }
 
 .article h3 {
     font-size: 1rem;
-    color: #007acc;
-    margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: -1px;
 }
 
-/* Latest News Section */
-.latest-news {
-    background-color: #202124;
-    padding: 60px 20px;
+.article h4 {
+    margin-bottom: 20px;
 }
 
-.latest-news h2 {
-    text-align: center;
-    margin-bottom: 40px;
+.article h3:hover {
+    text-decoration: underline #fff;
 }
 
-.news-container {
+.article h4:hover {
+    text-decoration: underline #fff;
+}
+
+
+/* Latest News Section and Recent Contributions Section */
+.latest-news, .recent-contributions {
+    margin: 5px auto;
+    max-width: 850px;
+    padding: 20px;
+}
+
+.latest-news h2, .recent-contributions h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.news-container, .contributions-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.news-item {
-    background-color: #303030;
-    padding: 20px;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+.item, .item1 {
+    clear: both;
 }
 
-.news-item:hover {
-    background-color: #3c3c3c;
+.item p:nth-child(3) {
+    float: right;
+    margin-top: -40px;
 }
+
+.item1 p:nth-child(3) {
+    float: right;
+    margin-top: -40px;
+    margin-right: 15px;
+}
+
+.item {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item1 {
+    padding-left: 15px;
+}
+
+.item h4:hover{
+    text-decoration: underline #fff;
+    cursor: pointer;
+}
+
+.item1 h4:hover{
+    text-decoration: underline #fff;
+    cursor: pointer;
+}
+
+.item p:nth-child(2):hover{
+    text-decoration: underline #fff;
+    cursor: pointer;
+}
+
+.item1 p:nth-child(2):hover{
+    text-decoration: underline #fff;
+    cursor: pointer;
+}
+
+
+/* Contributor Spotlight Section */
+.Contributor {
+    position: relative;
+    height: 55vh;
+    overflow: hidden;
+    color: #fff;
+    z-index: 1;
+}
+
+.Contributor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/mandala 2.png');
+    background-color: #000;
+    background-size: 700px 700px;
+    background-position: 300px -30px;
+    background-repeat: no-repeat;
+    opacity: 50%;
+    z-index: -1;
+}
+
+
+.contributor-spotlight {
+    color: #fff;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+  
+.spotlight-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+  
+.contributor-details {
+    flex: 2;
+    max-width: 500px;
+}
+
+.contributor-spotlight h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 60px 0 0 350px;
+}
+
+.contributor-details h3 {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0.5rem;
+    background-color: #fff;
+    padding: 1px;
+    width: 165px;
+}
+
+.contributor-details h3:hover {
+    text-decoration: underline;
+}
+  
+.contributor-details p {
+    line-height: 1.6;
+    font-size: 1rem;
+    font-style: oblique;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.contributor-details a {
+    color: #47b0f7;
+    text-decoration: none;
+}
+
+.contributor-details a:hover {
+    text-decoration: underline;
+}
+
+.badge img {
+    margin-top: -400px;
+    width: 250px;
+    height: 150px;
+}
+
+
+/* AWS Advert Section */
+.aws-advert {
+    background-color: #0F4764;
+    padding: 30px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.aws-advert:hover {
+    cursor: pointer;
+}
+
+.aws-logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+.aws-content h2 {
+    margin: 0 50px 5px -20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 24px;
+    font-size: 25px;
+    width: 400px;
+}
+
+.aws-content a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: -20px;
+}
+
 
 /* Footer Section */
 footer {
