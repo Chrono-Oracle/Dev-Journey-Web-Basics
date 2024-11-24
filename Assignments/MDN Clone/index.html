@@ -3,10 +3,18 @@
 
 
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MDN Clone - Resources for Developers</title>
+
         <link rel="stylesheet" href="assets/styles.css">
+
+        <!--Font Links-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     </head>
 
 
@@ -44,6 +52,16 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Tools</a></li>
                 </ul>
+                <div class="Theme">
+                    <img src="assets/images/contrast.png" alt="">
+                    <a href="#">Theme</a>
+                </div>
+                <div class="search-bar-nav">
+                    <input type="text" placeholder="">
+                    <button class="search-button">
+                        <img src="assets/images/search.png" alt="Search Icon" />
+                    </button>
+                </div>
                 <div class="auth-links">
                     <button>Log in</button>
                     <button>Sign up for free</button>
@@ -53,17 +71,19 @@
 
         <!-- Hero Section -->
         <section class="hero">
-            <!-- SVG now at the beginning 
-            <svg width="675" height="675" viewBox="0 0 675 675" fill="none" xmlns="http://www.w3.org/2000/svg" class="mandala"><title>Mandala</title><defs><path d="M337.5,337.5 m-320,0 a320,320 0 1,1 640,0 a320,320 0 1,1 -640,0" id="circle1"></path><path d="M337.5,337.5 m-280,0 a280,280 0 1,1 560,0 a280,280 0 1,1 -560,0" id="circle2"></path><path d="M337.5,337.5 m-240,0 a240,240 0 1,1 480,0 a240,240 0 1,1 -480,0" id="circle3"></path><path d="M337.5,337.5 m-200,0 a200,200 0 1,1 400,0 a200,200 0 1,1 -400,0" id="circle4"></path><path d="M337.5,337.5 m-160,0 a160,160 0 1,1 320,0 a160,160 0 1,1 -320,0" id="circle5"></path></defs><text dy="70" textLength="2010"><textPath textLength="2010" href="#circle1">&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>&nbsp;&nbsp;&nbsp;/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan>/<tspan>/</tspan></textPath></text><text dy="70" textLength="1760"><textPath textLength="1760" href="#circle2">&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan>&nbsp;&nbsp;+<tspan>+</tspan>+<tspan>+</tspan>+<tspan>+</tspan></textPath></text><text dy="70" textLength="1507"><textPath textLength="1507" href="#circle3"><tspan>{</tspan>{<tspan>{</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{</tspan>{<tspan>{</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{</tspan>{<tspan>{</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{</tspan>{<tspan>{</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{</tspan>{<tspan>{</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;<tspan>{</tspan>{<tspan>{</tspan>{&nbsp;<tspan>}</tspan>}<tspan>}</tspan>}&nbsp;&nbsp;</textPath></text><text dy="70" textLength="1257"><textPath textLength="1257" href="#circle4">&nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;../../ &nbsp;&nbsp;&nbsp;../../</textPath></text><text dy="70" textLength="1005"><textPath textLength="1005" href="#circle5"><tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;<tspan>&lt;&gt;</tspan>&lt;/&gt;</textPath></text></svg>
-            -->
             <div class="container">
                 <div class="hero-content">
-                    <h1>Resources for Developers, by Developers_</h1>
-                    <p>Documenting web technologies, including CSS, HTML, and JavaScript, since 2005.</p>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search...">
-                        <button>🔍</button>
+                    <div class="hero-content-text">
+                        <h1>Resources for <span class="h1">Developers</span>,<br> by Developers<span class="p">_</span></h1>
+                        <p>Documenting web technologies, including <span class="p">CSS</span>, <span class="p">HTML</span>, and <span class="p">JavaScript</span>, since 2005.</p>
                     </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="">
+                        <button class="search-button">
+                            <img src="assets/images/search.png" alt="Search Icon" />
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -71,131 +91,154 @@
 
         <!-- Advert Section -->
         <section class="advert">
+            <div class="advert-logo">
+                <a href="#"><img src="assets/images/awsbg.png" alt=""></a>
+            </div>
             <div class="advert-content">
-                <h2>Observability: Critical capability for AWS site reliability</h2>
+                <h2>Observability: Critical <br>capability for AWS <br>site reliability</h2>
                 <a href="#">Learn more ></a>
             </div>
         </section>
 
+        
+        <section class="Featured">
             <!-- Featured Articles Section -->
-        <section class="featured-articles">
-            <h2>Featured articles</h2>
-            <div class="articles-container">
-                <article class="article">
-                    <h3>Blog</h3>
-                    <h4>MDN partners with Scrimba to enhance web development learning</h4>
-                    <p>We have chosen Scrimba as a course partner for the MDN Curriculum. This blog post explores what the partnership means practically, and...</p>
-                </article>
-                <article class="article">
-                    <h3>Blog</h3>
-                    <h4>Developer essentials: JavaScript console methods</h4>
-                    <p>The JavaScript console is an essential tool for web development. Learn new and fun ways to use the console to display data and debug...</p>
-                </article>
-                <article class="article">
-                    <h3>Blog</h3>
-                    <h4>Introduction to web sustainability</h4>
-                    <p>What can web designers and developers do to build a more sustainable web? This post explores the environmental impacts of web technologies...</p>
-                </article>
-                <article class="article">
-                    <h3>Web APIs</h3>
-                    <h4>CSS Custom Highlight API</h4>
-                    <p>The CSS Custom Highlight API provides a mechanism for styling arbitrary text ranges on a document by using JavaScript to create...</p>
-                </article>
-            </div>
-        </section>
+            <section class="featured-articles">
+                <h2>Featured articles</h2>
+                <div class="articles-container">
+                    <article class="article">
+                        <h3>Blog</h3>
+                        <h4>MDN partners with Scrimba to enhance web development learning</h4>
+                        <p>We have chosen Scrimba as a course partner for the MDN Curriculum. This blog post explores what the partnership means practically, and...</p>
+                    </article>
+                    <article class="article">
+                        <h3>Blog</h3>
+                        <h4>Developer essentials: JavaScript console methods</h4>
+                        <p>The JavaScript console is an essential tool for web development. Learn new and fun ways to use the console to display data and debug...</p>
+                    </article>
+                    <article class="article">
+                        <h3>Blog</h3>
+                        <h4>Introduction to web sustainability</h4>
+                        <p>What can web designers and developers do to build a more sustainable web? This post explores the environmental impacts of web technologies...</p>
+                    </article>
+                    <article class="article">
+                        <h3>Web APIs</h3>
+                        <h4>CSS Custom Highlight API</h4>
+                        <p>The CSS Custom Highlight API provides a mechanism for styling arbitrary text ranges on a document by using JavaScript to create...</p>
+                    </article>
+                </div>
+            </section>
 
 
-        <!-- Latest News Section -->
-        <section class="latest-news">
-            <h2>Latest news</h2>
-            <div class="news-container">
-                <div class="news-item">
-                    <h4>MDN partners with Scrimba to enhance web development learning</h4>
-                    <p>developer.mozilla.org - 4 months ago</p>
+            <!-- Latest News Section -->
+            <section class="latest-news">
+                <h2>Latest news</h2>
+                <div class="news-container">
+                    <div class="item">
+                        <h4>MDN partners with Scrimba to enhance web development learning</h4>
+                        <p>developer.mozilla.org</p>
+                        <p>4 months ago</p>
+                    </div>
+                    <div class="item1">
+                        <h4>Introducing the MDN HTTP Observatory</h4>
+                        <p>developer.mozilla.org</p>
+                        <p>5 months ago</p>
+                    </div>
+                    <div class="item">
+                        <h4>Lift-off: The MDN Curriculum launch</h4>
+                        <p>developer.mozilla.org</p>
+                        <p>9 months ago</p>
+                    </div>
                 </div>
-                <div class="news-item">
-                    <h4>Introducing the MDN HTTP Observatory</h4>
-                    <p>developer.mozilla.org - 5 months ago</p>
-                </div>
-                <div class="news-item">
-                    <h4>Lift-off: The MDN Curriculum launch</h4>
-                    <p>developer.mozilla.org - 9 months ago</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Recent Contributions Section -->
-        <section class="recent-contributions">
-            <h2>Recent contributions</h2>
-            <div class="contributions-container">
-                <div class="contribution-item">
-                    <h4>Run `yarn upgrade`</h4>
-                    <p>mdn/translated-content - a day ago</p>
+            <!-- Recent Contributions Section -->
+            <section class="recent-contributions">
+                <h2>Recent contributions</h2>
+                <div class="contributions-container">
+                    <div class="item">
+                        <h4>Run `yarn upgrade`</h4>
+                        <p>mdn/translated-content</p>
+                        <p>9 hours ago</p>
+                    </div>
+                    <div class="item1">
+                        <h4>Bump cross-spawn from 7.0.3 to 7.0.6</h4>
+                        <p>mdn/translated-content</p>
+                        <p>14 hours ago</p>
+                    </div>
+                    <div class="item">
+                        <h4>Missing page border-radius [es]</h4>
+                        <p>mdn/translated-content</p>
+                        <p>8 hours ago</p>
+                    </div>
+                    <div class="item1">
+                        <h4>FF133 Relnote: onwaitingforkey content attribute added to audio/video elements</h4>
+                        <p>mdn/content</p>
+                        <p>14 hours ago</p>
+                    </div>
+                    <div class="item">
+                        <h4>fix(html): Duplicate 'content' use in sentence</h4>
+                        <p>mdn/content</p>
+                        <p>a day ago</p>
+                    </div>
+                    <div class="item1">
+                        <h4>FF133 ServiceWorkerContainer now available in Workers</h4>
+                        <p>mdn/content</p>
+                        <p>2 hours ago</p>
+                    </div>
+                    <div class="item">
+                        <h4>chore(media): swap outdated links to OTI MP4</h4>
+                        <p>mdn/content</p>
+                        <p>a day ago</p>
+                    </div>
+                    <div class="item1">
+                        <h4>Update `browser-compat` key for svg `stop-color` attribute</h4>
+                        <p>mdn/content</p>
+                        <p>a day ago</p>
+                    </div>
+                    <div class="item">
+                        <h4>zh-cn: update the translation of "JavaScript Introduction"</h4>
+                        <p>mdn/translated-content</p>
+                        <p>5 hours ago</p>
+                    </div>
+                    <div class="item1">
+                        <h4>Web/CSS/CSS_overflow を更新</h4>
+                        <p>mdn/translated-content</p>
+                        <p>a day ago</p>
+                    </div>
                 </div>
-                <div class="contribution-item">
-                    <h4>Bump cross-spawn from 7.0.3 to 7.0.6</h4>
-                    <p>mdn/translated-content - a day ago</p>
-                </div>
-                <div class="contribution-item">
-                    <h4>Missing page border-radius [es]</h4>
-                    <p>mdn/translated-content - a day ago</p>
-                </div>
-                <div class="contribution-item">
-                    <h4>FF133 Relnote: onwaitingforkey content attribute added to audio/video elements</h4>
-                    <p>mdn/content - a day ago</p>
-                </div>
-                <div class="contribution-item">
-                    <h4>fix(html): Duplicate 'content' use in sentence</h4>
-                    <p>mdn/content - a day ago</p>
-                </div>
-                <div class="contribution-item">
-                    <h4>FF133 ServiceWorkerContainer now available in Workers</h4>
-                    <p>mdn/content - a day ago</p>
-                </div>
-                <div class="contribution-item">
-                    <h4>chore(media): swap outdated links to OTI MP4</h4>
-                    <p>mdn/content - a day ago</p>
-                </div>
-                <div class="contribution-item">
-                    <h4>Update `browser-compat` key for svg `stop-color` attribute</h4>
-                    <p>mdn/content - a day ago</p>
-                </div>
-                <div class="contribution-item">
-                    <h4>zh-cn: update the translation of "JavaScript Introduction"</h4>
-                    <p>mdn/translated-content - a day ago</p>
-                </div>
-                <div class="contribution-item">
-                    <h4>Web/CSS/CSS_overflow を更新</h4>
-                    <p>mdn/translated-content - a day ago</p>
-                </div>
-            </div>
+            </section>
         </section>
 
 
         <!-- Contributor Spotlight Section -->
-        <section class="contributor-spotlight">
-            <h2>Contributor Spotlight</h2>
-            <div class="spotlight-content">
-                <div class="contributor-details">
-                    <h3>HOCHAN LEE</h3>
-                    <p>MDN is a large, open community where everyone is welcome. It offers a great opportunity to organize thoughts through writing, while sharing and expanding knowledge by engaging with a diverse group of people throughout the contribution process.</p>
-                    <a href="#">Get involved ➔</a>
+        <section class="Contributor">
+            <section class="contributor-spotlight">
+                <h2>Contributor Spotlight</h2>
+                <div class="spotlight-content">
+                    <div class="contributor-details">
+                        <h3>HOCHAN LEE</h3>
+                        <p>MDN is a large, open community where everyone is welcome. It offers a great opportunity to organize thoughts through writing, while sharing and expanding knowledge by engaging with a diverse group of people throughout the contribution process.</p>
+                        <a href="#">Get involved ➔</a>
+                    </div>
+                    <div class="badge">
+                        <img src="assets/images/mdn_contributor.png" alt="MDN Badge">
+                    </div>
                 </div>
-                <div class="badge">
-                    <img src="badge.png" alt="MDN Badge">
-                    <p>It's the Web You Drive.</p>
-                </div>
-            </div>
+            </section>
         </section>
 
-            <!-- AWS Advert Section -->
-        <section class="aws-advert">
-            <div class="aws-content">
-                <img src="aws-logo.png" alt="AWS Marketplace Logo">
-                <h2>Observability: Critical capability for AWS site reliability</h2>
-                <a href="#">Learn more ></a>
-            </div>
-        </section>
+                <!-- AWS Advert Section -->
+            <section class="aws-advert">
+                <div class="aws-logo">
+                    <img src="assets/images/awsbg.png" alt="AWS Marketplace Logo">
+                </div>
+                <div class="aws-content">
+                    <h2>Observability: Critical capability<br> for AWS site reliability</h2>
+                    <a href="#">Learn more ></a>
+                </div>
+            </section>
+
 
 
         <!-- Footer Section -->
