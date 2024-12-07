@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
+
+        .ball-container {
+            position: relative;
+            width: 350px;
+            height: 500px;
+            border: 3px solid #000;
+            overflow: hidden;
+        }
+
+        .ball {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #636363;
+            transform: translateX(-50%);
+            animation: 3s infinite ease-in-out bounce, 3s infinite ease-in-out squash;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                bottom: 0;
+                animation-timing-function: ease-out;
+                box-shadow: 3px 1px 1px 1px rgb(89, 89, 89);
+            }
+            50% {
+                bottom: 470px;
+                animation-timing-function: ease-in;
+            }
+        }
+
+        @keyframes squash {
+            0%, 100% {
+                width: 50px;
+                height: 50px;
+            }
+            50% {
+                width: 55px;
+                height: 40px;
+            }
+        }
+        
+    </style>
+
+    <div class="ball-container">
+        <span class="ball"></span>
+    </div>
+
+</body>
+</html>
