@@ -1,0 +1,12 @@
+/*Variables*/
+$primary-color: #78de3e;
+$primary-font: 16px;
+$primary-fontfamily: "Helvetica Neue", Helvetica, Arial;
+
+p {
+    font-size: $primary-font;
+    font-family: $primary-fontfamily;
+    color: $primary-color;
+    background-color: orange;
+    border: 2px solid black;
+}
