@@ -1,5 +1,10 @@
 @import 'variable';
 
+@function pxTo Rem($px){
+    $base: 16px;
+    @return ()
+}
+
 p {
     font-size: $primary-font;
     font-family: $primary-fontfamily;
