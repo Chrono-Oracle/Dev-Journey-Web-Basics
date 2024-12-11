@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Header Section */
+header {
+  background-color: #F4F6F7;
+}
+header .top-header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+header .top-headernav {
+  background-color: #F4F6F7;
+}
+header nav {
+  position: relative;
+  height: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 3px;
+  padding: 25px;
+}
+header nav img {
+  height: 100px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-left: 400px;
+}
+header nav ul li {
+  height: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #e64a95;
+}
+header nav div {
+  display: flex;
+  align-items: center;
+  height: 20px;
+}
+header nav div input[type=text] {
+  width: 168px;
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+header nav div input[type=text]:focus {
+  outline: none;
+  border-color: #e64a95;
+}
+header nav div span {
+  margin-left: 10px;
+}
+header nav div span img {
+  height: 20px; /* Search icon size */
+  cursor: pointer;
+}
+header h2 {
+  height: 80px;
+  text-align: center;
+  font-size: 36px;
+  color: #666;
+  background-color: #F4F6F7;
+  margin: 20px 0;
+  font-weight: normal;
+}
+
+/* Main Section */
+main #hero {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+}
+main #hero p {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+main #hero img {
+  max-width: 100%;
+  height: auto;
+}
+main #releases {
+  text-align: center;
+  background-color: #e64a95;
+  color: white;
+  padding: 20px 10px;
+}
+main #releases h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+main #releases ul {
+  list-style: none;
+  padding: 0;
+}
+main #releases ul li {
+  margin: 5px 0;
+}
+main #releases ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+main #releases ul li a:hover {
+  text-decoration: underline;
+}
+main #features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: white;
+}
+main #features div {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+main #features div h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+main #features div p {
+  font-size: 16px;
+  color: #666;
+}
+
+/*# sourceMappingURL=style.css.map */
