@@ -108,8 +108,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "tailwindcss -1 ./src/Style.css -o ./dist/Style.css --watch",
-    "build": "tailwindcss -1 ./src/Style.css -0 ./dist/Style.css --minify"
+    "watch": "tailwindcss -1 ./src/Style.css -o ../dist/Style.css --watch",
+    "build": "tailwindcss -1 ./src/Style.css -0 ../dist/Style.css --minify"
   },
   "keywords": [],
   "author": "",
