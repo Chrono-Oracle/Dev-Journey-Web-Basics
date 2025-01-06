@@ -1,0 +1,9 @@
+
+# Ignore specific files
+package-lock.json
+package.json
+postcss.config.js
+tailwind.config.js
+
+# Ignore the node_modules folder
+node_modules

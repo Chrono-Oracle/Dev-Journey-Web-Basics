@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="../dist/style1.css">
+    <link rel="stylesheet" href="../src/assets/css/styles/secondary.css">
+
     <title>Class Project</title>
 
 </head>
@@ -36,7 +39,7 @@
         </nav>
 
 
-        <section class="flex justify-center gap-[150px]">
+        <section class="flex justify-center gap-[230px] items-center">
             <!--Left Section-->
             <div>
                 <div class="text-[3rem] w-[400px]">
@@ -61,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-10 bg-[#eafffa] flex items-center p-5 gap-[120px] rounded-[10px] border-[2px] border-[#e8e8e8]">
+                <div class="mt-10 bg-[#eafffa] flex items-center p-5 gap-[90px] rounded-[10px] border-[2px] border-[#e8e8e8]">
                     <div>
                         <p>What do you learn today?</p>
                         <h3 class="text-slate-900 font-bold">Learn Fullstack Javascript</h3>
@@ -73,11 +76,12 @@
             </div>
 
             <!--Right Section-->
-            <div>
-                <div class="relative top-10 bg-[#a4a4a4] w-80 h-[350px] rounded-tl-[40%] rounded-b-[45%]">
-                    <div class="relative overflow-hidden right-5 bottom-5 bg-gradient-to-br from-orange-500 to-orange-300  w-80 h-[370px] rounded-tl-[40%] rounded-b-[45%]">
-                        <img class="absolute z-10 left-5 scale-150" src="assets/images/manlaptop.png" alt="" >
+            <div class="container">
+                <div class="relative w-[15rem] h-[10rem] bg-orange-400">
+                    <div>
+                        <img class="absolute scale-x-150 h-[500px]" src="assets/images/manlaptop.png" alt="" >
                     </div>
+                    
                 </div>
             </div>
 
@@ -198,12 +202,201 @@
 
 
     <!--Mentors Section-->
-    <section class="my-10">
+    <section class="mt-[200px] grid justify-center">
 
-        <div></div>
-        <div></div>
+        <div class="flex items-center gap-[420px] h-[70px]">
+            <h2 class="text-[3.5rem] font-bold w-[500px] leading-[70px]">Meet with our mentor</h2>
+            <button class="bg-buttons text-white text-[14px] w-[200px] p-3 rounded-universal">Explore <span class="font-semibold">10+</span> our Mentor</button>
+        </div>
+        <div class="grid grid-cols-3 gap-[25px] gap-y-[60px] my-[100px]">
+
+            <div>
+                <div>
+                    <img class="w-[350px] h-[300px] object-cover" src="assets/images/mentor1.jpg" alt="">
+                </div>
+                <div class="grid justify-center mt-5 gap-4">
+                    <h4 class="font-bold text-[25px]">Shoo Thar Mien</h4>
+                    <p class="text-center text-[12px]">Senior UX Designer</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img class="w-[350px] h-[300px] object-cover" src="assets/images/mentor2.jpg" alt="">
+                </div>
+                <div class="grid justify-center mt-5 gap-4">
+                    <h4 class="font-bold text-[25px]">Baifern</h4>
+                    <p class="text-center text-[12px]">Senior IxD</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img class="w-[350px] h-[300px] object-cover" src="assets/images/mentor3.jpg" alt="">
+                </div>
+                <div class="grid justify-center mt-5 gap-4">
+                    <h4 class="font-bold text-[25px]">Shoo Yan Tho</h4>
+                    <p class="text-center text-[12px]">Creative Director</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img class="w-[350px] h-[300px] object-cover" src="assets/images/mentor4.jpg" alt="">
+                </div>
+                <div class="grid justify-center mt-5 gap-4">
+                    <h4 class="font-bold text-[25px]">Shoo Bro Tho</h4>
+                    <p class="text-center text-[12px]">Motion Designer</p>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <img class="w-[350px] h-[300px] object-cover" src="assets/images/mentor5.jpg" alt="">
+                </div>
+                <div class="grid justify-center mt-5 gap-4">
+                    <h4 class="font-bold text-[25px]">Shoo Mhar No</h4>
+                    <p class="text-center text-[12px]">Illustrator</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <img class="w-[350px] h-[300px] object-cover" src="assets/images/mentor6.jpg" alt="">
+                </div>
+                <div class="grid justify-center mt-5 gap-4">
+                    <h4 class="font-bold text-[25px]">Shoo Mhan Tho</h4>
+                    <p class="text-center text-[12px]">Senior UX Researcher</p>
+                </div>
+            </div>
+
+        </div>
 
     </section>
+
+    <!--Testimonial Section-->
+    <section class="grid justify-center mb-10">
+        <div class="mb-[80px]">
+            <h2 class="text-[3.5rem] font-bold w-[370px] leading-[70px] mr-[47rem]">What our students says</h2>
+        </div>
+
+        <div class="grid grid-cols-3">
+
+            <div class="bg-[#eafffa] w-[350px] h-[200px] p-[25px] rounded-universal">
+                <div class="flex gap-x-5 items-center mt-3">
+                    <div class="w-[35px] h-[35px] bg-slate-600 rounded-[50%]"></div>
+                    <div>
+                        <h5 class="font-bold">Sulastri</h5>
+                        <p class="text-[12px]">SMKN 1 Soehat</p>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-[13px] text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis esse tempora, officia nobis architecto facere numquam iure beatae. Ipsam veniam laborum veritatis placeat?</p>
+                </div>
+            </div>
+
+            <div class="bg-[#eafffa] w-[350px] h-[200px] p-[25px] rounded-universal">
+                <div class="flex gap-x-5 items-center mt-3">
+                    <div class="w-[35px] h-[35px] bg-slate-600 rounded-[50%]"></div>
+                    <div>
+                        <h5 class="font-bold">Darmi</h5>
+                        <p class="text-[12px]">Brawijaya University</p>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-[13px] text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis esse tempora, officia nobis architecto facere numquam iure beatae. Ipsam veniam laborum veritatis placeat?</p>
+                </div>
+            </div>
+
+            <div class="bg-[#eafffa] w-[350px] h-[200px] p-[25px] rounded-universal">
+                <div class="flex gap-x-5 items-center mt-3">
+                    <div class="w-[35px] h-[35px] bg-slate-600 rounded-[50%]"></div>
+                    <div>
+                        <h5 class="font-bold">Marsha</h5>
+                        <p class="text-[12px]">SMKN 1 Soehat</p>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <p class="text-[13px] text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis esse tempora, officia nobis architecto facere numquam iure beatae. Ipsam veniam laborum veritatis placeat?</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div></div>
+    </section>
+
+    <!--Newsletter Section-->
+    <section class="grid justify-center mt-[5rem] mb-10">
+
+        <div class="flex gap-[150px] items-center">
+            <!--Left Section-->
+            <div class="grid gap-y-4">
+                <h4 class="font-bold text-[2rem]">Newsletter</h4>
+                <p class="w-[20rem]">Subscribe our newsletter for discounts, promo and many more.</p>
+                <div class="flex gap-8">
+                    <input class="border border-slate-200 p-3 rounded-universal" type="email" placeholder="Your Email*">
+                    <button class="bg-buttons p-3 w-[7rem] text-white font-semibold rounded-universal">Send</button>
+                </div>
+            </div>
+
+            <!--Right Section-->
+            <div>
+                <div class="w-[450px] h-[240px] bg-slate-600"></div>
+                <div></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Footer-->
+    <footer class="bg-[#078465] grid justify-center py-20 px-28 text-white">
+
+        <div class="flex gap-x-[25rem] px-10">
+            <div class="flex flex-col space-y-5">
+                <div class="flex gap-3 items-center">
+                    <h1 class="w-[40px] h-[40px] grid items-center justify-center bg-[#1c4044] rounded-[5px] text-white font-bold">N</h1>
+                    <h2 class="font-bold">Sinau Inc</h2>
+                </div>
+                <p class="w-[200px]">Level up your skills, and get dream job with passion.</p>
+                <div class="flex gap-4">
+                    <a class="w-[25px] h-[25px] bg-[#209074] p-[5px] rounded-[50%]" href="#"><img src="assets/images/instagram.png" alt=""></a>
+                    <a class="w-[25px] h-[25px] bg-[#209074] p-[5px] rounded-[50%]" href="#"><img src="assets/images/tiktok.png" alt=""></a>
+                    <a class="w-[25px] h-[25px] bg-[#209074] p-[5px] rounded-[50%]" href="#"><img src="assets/images/twitter-logo.png" alt=""></a>
+                    <a class="w-[25px] h-[25px] bg-[#209074] p-[5px] rounded-[50%]" href="#"><img src="assets/images/youtube.png" alt=""></a>
+                </div>
+            </div>
+    
+            <div class="flex gap-[5rem]">
+                <div class="flex flex-col gap-3">
+                    <h6 class="text-[1.2rem] font-semibold">Company</h6>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h6 class="text-[1.2rem] font-semibold">Support</h6>
+                    <ul class="flex flex-col gap-3">
+                        <li><a href="">Help center</a></li>
+                        <li><a href="">Terms of service</a></li>
+                        <li><a href="">Legal</a></li>
+                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="">Status</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="text-[1.2rem] font-semibold">Stay up to date</h6>
+                    <input type="email" placeholder="Your email address">
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     
 </body>

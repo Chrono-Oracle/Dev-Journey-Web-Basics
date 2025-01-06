@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/Blockchain/style.css">
+
+    <title>Document</title>
+
+</head>
+
+<!--npx tailwindcss -i src/Blockchain/assets/styles/style.css -o dist/Blockchain/style.css --watch-->
+
+<body>
+    
+    <nav class="bg-[#121D33] flex justify-center items-center mylaptop:gap-[8rem] h-[5rem] lg:gap-0">
+        <div class="flex items-center mylaptop:gap-9 lg:gap-5">
+            <div class="flex items-center mylaptop:gap-2 lg:gap-3">
+                <img class="w-[30px]" src="assets/images/blockchain.com-logo.png" alt="">
+                <h2 class="text-[1.5rem]"><a href="https://www.blockchain.com/"><span class="text-white font-bold">Blockchain</span><span class="text-[#A0A5AD] font-bold">.com</span></a></h2>
+            </div>
+            <ul class="flex mylaptop:gap-7 text-[1.1rem] font-medium text-white opacity-80">
+                <li class="py-1 px-3 rounded-universal transition ease-in-out hover:bg-[#283347] hover:duration-700"><a href="#">Wallet</a></li>
+                <li class="py-1 px-3 rounded-universal transition ease-in-out hover:bg-[#283347] hover:duration-700"><a href="#">Exchange</a></li>
+                <li class="py-1 px-3 rounded-universal transition ease-in-out hover:bg-[#283347] hover:duration-700"><a href="#">Explorer</a></li>
+                <li class="py-1 px-3 rounded-universal transition ease-in-out hover:bg-[#283347] hover:duration-700"><a href="#">Pay</a></li>
+                <li class="py-1 px-3 rounded-universal transition ease-in-out hover:bg-[#283347] hover:duration-700"><a href="#">Institutional</a></li>
+                <li class="py-1 px-3 rounded-universal transition ease-in-out hover:bg-[#283347] hover:duration-700"><a href="#">...</a></li>
+            </ul>
+        </div>
+        <div class="flex mylaptop:gap-5 lg:gap-5">
+            <button class="bg-[#4D5666]/30 p-2 rounded-[50%] transition ease-in-out hover:bg-[#4D5666]/100"><img class="w-[25px]" src="assets/images/search.png" alt=""></button>
+            <button class="border-2 p-2 w-[5rem] text-white text-[.9rem] rounded-[.7rem]">Log In</button>
+            <button class="p-2 w-[5rem] bg-white rounded-[.7rem] text-[.9rem] font-medium transition ease-in-out hover:bg-[#DFE3EB]">Sign Up</button>
+        </div>
+    </nav>
+
+
+    <header class="relative h-[35rem] bg-custom-45deg grid justify-center content-center text-white">
+    <!--1440 x 569.2-->
+        <div class="grid gap-y-6 w-[45rem] mr-[20rem] lg:ml-20">
+            <h3 class="font-semibold text-[3rem]">Be early to the future of finance</h3>
+            <p class="font-semibold text-[1.5rem]">Buy Bitcoin, Ethereum, and other leading cryptocurrencies on a platform trusted by millions.</p>
+            <div class="flex gap-6">
+                <input class="p-[.7rem] w-[25rem] rounded-universal bg-transparent/20 placeholder:text-white" type="email" placeholder="Your email address">
+                <button class="bg-white text-[#0C6CF2] text-[.9rem] w-[7rem] rounded-universal">Sign Up</button>
+            </div>
+        </div>
+
+        
+
+    </header>
+
+    <section class="relatve grid justify-center mt-[-4rem]">
+
+        <!--Currency-->
+        <div class="flex mylaptop:gap-x-7 z-10 lg:gap-x-3">
+
+            <div class="flex flex-col bg-white w-[15rem] h-[9rem] text-black p-4 gap-y-[.5rem] rounded-[10px] shadow-xl">
+                <div class="flex gap-[3rem] items-center mt-[.6rem]">
+                    <img class="w-[35px]" src="assets/images/bitcoin.png" alt="">
+                    <div class="flex gap-[.7rem]">
+                        <button class="bg-[#DED8FD] text-[#8433E5] w-[3rem] p-1 rounded-universal">Buy</button>
+                        <button class="bg-[#D1F0DB] text-[#4A994C] w-[3.5rem] p-1 rounded-universal">Trade</button>
+                    </div>
+                </div>
+                <div class="flex gap-x-3 font-semibold">
+                    <span>Bitcoin</span>
+                    <span class="text-[#A0A5AD]">BTC</span>
+                </div>
+                <div class="flex gap-x-4 font-semibold">
+                    <span>$96,674.16</span>
+                    <span class="text-[#4A994C]">+1.33%</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-white w-[15rem] h-[9rem] text-black p-4 gap-y-[.5rem] rounded-[10px] shadow-xl">
+                <div class="flex gap-[3rem] items-center mt-[.6rem]">
+                    <img class="w-[35px]" src="assets/images/ethereum.png" alt="">
+                    <div class="flex gap-[.7rem]">
+                        <button class="bg-[#DED8FD] text-[#8433E5] w-[3rem] p-1 rounded-universal">Buy</button>
+                        <button class="bg-[#D1F0DB] text-[#4A994C] w-[3.5rem] p-1 rounded-universal">Trade</button>
+                    </div>
+                </div>
+                <div class="flex gap-x-3 font-semibold">
+                    <span>Ethereum</span>
+                    <span class="text-[#A0A5AD]">ETH</span>
+                </div>
+                <div class="flex gap-x-4 font-semibold">
+                    <span>$3,414.14</span>
+                    <span class="text-[#4A994C]">+1.74%</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-white w-[15rem] h-[9rem] text-black p-4 gap-y-[.5rem] rounded-[10px] shadow-xl">
+                <div class="flex gap-[3rem] items-center mt-[.6rem]">
+                    <img class="w-[35px]" src="assets/images/dogecoin.png" alt="">
+                    <div class="flex gap-[.7rem]">
+                        <button class="bg-[#DED8FD] text-[#8433E5] w-[3rem] p-1 rounded-universal">Buy</button>
+                        <button class="bg-[#D1F0DB] text-[#4A994C] w-[3.5rem] p-1 rounded-universal">Trade</button>
+                    </div>
+                </div>
+                <div class="flex gap-x-3 font-semibold">
+                    <span>Dogecoin</span>
+                    <span class="text-[#A0A5AD]">DOGE</span>
+                </div>
+                <div class="flex gap-x-4 font-semibold">
+                    <span>$0.32</span>
+                    <span class="text-[#4A994C]">+1.55%</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col bg-white w-[15rem] h-[9rem] text-black p-4 gap-y-[.5rem] rounded-[10px] shadow-xl">
+                <div class="flex gap-[3rem] items-center mt-[.6rem]">
+                    <img class="w-[35px]" src="assets/images/coin.png" alt="">
+                    <div class="flex gap-[.7rem]">
+                        <button class="bg-[#DED8FD] text-[#8433E5] w-[3rem] p-1 rounded-universal">Buy</button>
+                        <button class="bg-[#D1F0DB] text-[#4A994C] w-[3.5rem] p-1 rounded-universal">Trade</button>
+                    </div>
+                </div>
+                <div class="flex gap-x-3 font-semibold">
+                    <span>Solana</span>
+                    <span class="text-[#A0A5AD]">SOL</span>
+                </div>
+                <div class="flex gap-x-4 font-semibold">
+                    <span>$190.91</span>
+                    <span class="text-[#4A994C]">+1.14%</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

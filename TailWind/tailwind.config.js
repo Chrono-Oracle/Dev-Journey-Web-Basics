@@ -2,7 +2,14 @@
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
+
+
     extend: {
+      
+      screens: {
+        'mylaptop': '1440px',
+      },
+
       scale: {
         '1': '0.1',
         '2': '0.2',
@@ -14,6 +21,7 @@ module.exports = {
       gridTemplateColumns: {
         //6 Column Grid
         '6': 'repeat(6, minmax(0, 10em))',
+        'response': 'repeat(auto-fill, minmax(12rem, auto))',
       },
 
       //buttons
@@ -32,6 +40,8 @@ module.exports = {
         'card-2': "url('/src/assets/images/card2.jpg')",
         'card-3': "url('/src/assets/images/card3.jpg')",
         'card-4': "url('/src/assets/images/card4.jpg')",
+
+        'custom-45deg': 'linear-gradient(140deg, #121D33, #2962BF, #5D72D4, #AA84DF, #D383D3)',
       }
 
     },
